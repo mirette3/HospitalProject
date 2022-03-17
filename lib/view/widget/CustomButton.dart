@@ -4,18 +4,18 @@ import 'custom_text.dart';
 class CustomButton extends StatelessWidget {
 
   final String text;
-  var onPressed;
+ var onpressed;
   final Color color;
 
 
 
-  CustomButton({this.text=" ", this.onPressed,this.color=mintGreenDark1});
+  CustomButton({this.text=" ", required this.onpressed,this.color=mintGreenDark1,});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       child:  MaterialButton(
-          onPressed:onPressed,
+          onPressed: onpressed,
           shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(15)
           ),
